@@ -1,0 +1,25 @@
+onvif:
+  - mac: d8:3a:dd:77:41:fd
+    ports:
+      server: 80
+      rtsp: 554
+    name: PiCam
+    uuid: 15b21259-77d9-441f-9913-3ccd8a82e430
+    highQuality:
+      rtsp: /mystream
+      width: 1600
+      height: 1200
+      framerate: 10
+      bitrate: 6200
+      quality: 4
+    lowQuality:
+      rtsp: /mystream
+      width: 800
+      height: 600
+      framerate: 5
+      bitrate: 1600
+      quality: 1
+    target:
+      hostname: 192.168.1.205
+      ports:
+        rtsp: 554

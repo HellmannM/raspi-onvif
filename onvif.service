@@ -1,0 +1,14 @@
+[Unit]
+Description=onvif video stream
+After=network.target local-fs.target remote-fs.target
+
+[Service]
+User=hellmann
+RuntimeDirectory=onvif
+LogsDirectory=onvif
+StateDirectory=onvif
+ExecStart=/usr/bin/onvif
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
