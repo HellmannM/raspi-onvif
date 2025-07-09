@@ -6,20 +6,20 @@ onvif:
     name: PiCam
     uuid: 15b21259-77d9-441f-9913-3ccd8a82e430
     highQuality:
-      rtsp: /mystream
+      rtsp: /rpi
       width: 1600
       height: 1200
       framerate: 10
       bitrate: 6200
       quality: 4
     lowQuality:
-      rtsp: /mystream
-      width: 800
-      height: 600
-      framerate: 5
+      rtsp: /secondary
+      width: 640
+      height: 480
+      framerate: 1
       bitrate: 1600
       quality: 1
     target:
       hostname: 192.168.1.205
       ports:
-        rtsp: 554
+        rtsp: 8554
