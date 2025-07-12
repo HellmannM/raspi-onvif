@@ -2,7 +2,7 @@ onvif:
   - mac: d8:3a:dd:77:41:fd
     ports:
       server: 80
-      rtsp: 554
+      rtsp: 8554
     name: PiCam
     uuid: 15b21259-77d9-441f-9913-3ccd8a82e430
     highQuality:
@@ -16,10 +16,10 @@ onvif:
       rtsp: /secondary
       width: 640
       height: 480
-      framerate: 1
+      framerate: 10
       bitrate: 1600
       quality: 1
     target:
-      hostname: 192.168.1.205
+      hostname: 127.0.0.1
       ports:
-        rtsp: 8554
+        rtsp: 554

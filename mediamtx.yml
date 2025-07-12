@@ -735,7 +735,7 @@
 #  # do not match another entry.
 #  all_others:
 
-rtspAddress: :8554
+rtspAddress: :554
 paths:
   rpi:
     source: rpiCamera
@@ -754,7 +754,7 @@ paths:
     rpiCameraSecondary: true
     rpiCameraWidth: 640
     rpiCameraHeight: 480
-    rpiCameraFPS: 1
+    rpiCameraFPS: 10
     rpiCameraCodec: auto
     rpiCameraJPEGQuality: 60
 
